@@ -596,7 +596,7 @@ btnNext.addEventListener("click", () => {
     if (currentQuiz < quizData.length) {
       loadQuiz();
     }
-    if (!(currentQuiz < quizData.length) && total >= 1) {
+    if (!(currentQuiz < quizData.length) && Math.round(total) == 1) {
       choices.innerHTML = `
       <div class="quiz-card" id="quiz-card">
     <h2 class="result-title" id="result-title">Hasil</h2>
@@ -604,13 +604,13 @@ btnNext.addEventListener("click", () => {
     </h1>
     <h1 class="result" id="result">Tidak Bahagia</h1>
     <p class="result-text" id="result-text">
-    Tidak bahagia. Kamu mungkin melihat diri Kamu dan situasi Kamu lebih buruk daripada yang sebenarnya.
+    Tidak bahagia. Kamu mungkin melihat diri Kamu dan situasi Kamu lebih buruk daripada yang sebenarnya. 
     </p>
     <div class="button">
     <button onclick="location.reload()" class="btn-repeat" >Ulangi <i class="fa-solid fa-repeat" style="color: #fff"></i></button>
     </div>
     </div>`;
-    } else if (!(currentQuiz < quizData.length) && total >= 2) {
+    } else if (!(currentQuiz < quizData.length) && Math.round(total) == 2) {
       choices.innerHTML = `
       <div class="quiz-card" id="quiz-card">
     <h2 class="result-title" id="result-title">Hasil</h2>
@@ -624,7 +624,7 @@ btnNext.addEventListener("click", () => {
     </div>
     </div>
 `;
-    } else if (!(currentQuiz < quizData.length) && total >= 3) {
+    } else if (!(currentQuiz < quizData.length) && Math.round(total) == 3) {
       choices.innerHTML = `
       <div class="quiz-card" id="quiz-card">
     <h2 class="result-title" id="result-title">Hasil</h2>
@@ -638,7 +638,7 @@ btnNext.addEventListener("click", () => {
     </div>
     </div>
     `;
-    } else if (!(currentQuiz < quizData.length) && total >= 4) {
+    } else if (!(currentQuiz < quizData.length) && Math.round(total) == 4) {
       choices.innerHTML = `
       <div class="quiz-card" id="quiz-card">
     <h2 class="result-title" id="result-title">Hasil</h2>
@@ -651,7 +651,7 @@ btnNext.addEventListener("click", () => {
     <button onclick="location.reload()" class="btn-repeat" >Ulangi <i class="fa-solid fa-repeat" style="color: #fff"></i></button>
     </div>
       </div>`;
-    } else if (!(currentQuiz < quizData.length) && total >= 5) {
+    } else if (!(currentQuiz < quizData.length) && Math.round(total) == 5) {
       choices.innerHTML = `
       <div class="quiz-card" id="quiz-card">
     <h2 class="result-title" id="result-title">Hasil</h2>
@@ -664,7 +664,7 @@ btnNext.addEventListener("click", () => {
     <button onclick="location.reload()" class="btn-repeat" >Ulangi <i class="fa-solid fa-repeat" style="color: #fff"></i></button>
     </div>
     </div>`;
-    } else if (!(currentQuiz < quizData.length) && total >= 6) {
+    } else if (!(currentQuiz < quizData.length) && Math.round(total) == 6) {
       choices.innerHTML = `
       <div class="quiz-card" id="quiz-card">
     <h2 class="result-title" id="result-title">Hasil</h2>
