@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans";
+}
+
+::selection {
+  color: var(--ter-color);
+  background: var(--dark-mode);
+}
+
+body {
+  width: 100%;
+  background-image: url("images/bg-2.svg");
+  background-attachment: fixed;
+  background-size: cover;
+  --background: #f8ffe5;
+  --main-color: #ef476f;
+  --lighter-main: #ef476e38;
+  --lighter-sec: #06d69e27;
+  --sec-color: #06d6a0;
+  --ter-color: #ff003c;
+  --dark-mode: #0d0d0d;
+  --black: #000;
+  --white: #fff;
+}
+
+.quiz-card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url(images/bg.svg);
+  background-size: cover;
+  width: 400px;
+  height: auto;
+  padding: 30px;
+  border-radius: 20px 20px 20px 20px;
+}
+.quiz-card-start {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url(images/bg.svg);
+  background-size: cover;
+  width: 400px;
+  height: 700px;
+  padding: 30px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.title {
+  font-size: 50px;
+  margin: 0px 0px 30px 0px;
+  font-weight: bold;
+  color: var(--sec-color);
+  text-align: left;
+  text-shadow: 4px 0px 0px rgba(239, 71, 111, 1);
+  letter-spacing: 4px;
+}
+
+.title span {
+  color: var(--main-color);
+  text-shadow: 3px 0px 0px var(--sec-color);
+}
+
+.desc p {
+  color: var(--sec-color);
+  text-align: justify;
+}
+
+.desc p span {
+  color: var(--main-color);
+  text-align: left;
+}
+.question {
+  color: var(--main-color);
+  margin: 0px 0px 0px 0px;
+  padding: 5px;
+  font-size: 30px;
+}
+
+.border-top {
+  border-top: 5px solid var(--sec-color);
+  margin: 0px 0px 0px 5px;
+  width: 15%;
+}
+.border {
+  border-top: 2px solid var(--main-color);
+  margin: 10px 0px 20px 0px;
+}
+
+.result-title {
+  color: var(--main-color);
+  text-align: center;
+  /* display: none; */
+}
+
+.emot {
+  text-align: center;
+  margin: 10px 0px 0px 10px;
+  font-size: 55px;
+  /* display: none; */
+}
+
+.result {
+  color: var(--sec-color);
+  text-align: center;
+  margin: 0px 0px 10px 0px;
+  /* display: none; */
+}
+
+.result-text {
+  color: var(--sec-color);
+  text-align: justify;
+  margin: 0px 0px 10px 0px;
+  /* display: none; */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  font-size: 24px;
+  background-color: var(--lighter-sec);
+  padding: 15px 0px 40px 15px;
+  margin: 5px 0px;
+  border-radius: 15px;
+  clear: both; /* Mengatasi efek float */
+}
+
+input[type="radio"] {
+  width: 24px;
+  height: 24px;
+  accent-color: var(--sec-color);
+  border: 3px solid var(--sec-color);
+  border-radius: 50%;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  margin: 0px 15px 0px 0px;
+  float: right; /* Menggunakan float untuk memindahkan ke kanan */
+  margin-left: 10px; /* Jarak antara input radio dan label */
+}
+
+input[type="radio"]:checked {
+  background-color: var(--main-color);
+}
+
+label {
+  color: var(--sec-color);
+  float: left; /* Menggunakan float untuk memindahkan ke kiri */
+}
+
+.button {
+  display: flex;
+  justify-content: right;
+  margin: 25px 0px 0px 0px;
+  width: 100%px;
+  height: 45px;
+}
+
+.button a {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0px 0px 0px;
+  width: 100%;
+  gap: 10px;
+  height: 45px;
+  border-style: none;
+}
+
+.button a {
+  text-decoration: none;
+}
+
+.button a button {
+  color: var(--white);
+  background-color: var(--main-color);
+}
+
+.button a :hover {
+  transition: 0.5s;
+  background-color: var(--ter-color);
+}
+
+.btn-next {
+  background-color: var(--main-color);
+  color: var(--white);
+}
+.btn-next:hover {
+  transition: 0.5s;
+  background-color: var(--ter-color);
+  color: var(--white);
+}
+.btn-repeat {
+  background-color: var(--main-color);
+  color: var(--white);
+  bottom: 0px;
+  position: sticky;
+
+  /* display: none; */
+}
+.btn-repeat:hover {
+  transition: 0.5s;
+  background-color: var(--ter-color);
+  color: var(--white);
+  /* display: none; */
+}
+button {
+  width: 400px;
+  border-radius: 25px;
+  border-style: none;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.footer-start {
+  color: var(--sec-color);
+  margin: 10px 0px 0px 0px;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.footer-start a {
+  color: var(--sec-color);
+}
+.footer {
+  color: var(--sec-color);
+  margin: 20px 0px 0px 0px;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.footer a {
+  color: var(--sec-color);
+}
